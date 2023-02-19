@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Excel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+<body>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Archivo Excel</div>
+            <div class="panel-body">
+                <!-- Input type file to upload excel file -->
+                <input type="file" id="fileUpload" accept=".xls,.xlsx" /><br />
+                <button type="button" id="uploadExcel">Convert</button>
+
+                <!-- Render parsed JSON data here -->
+                <!-- <div style="margin-top:10px;">
+                    <pre id="jsonData"></pre>
+                </div> -->
+            </div>
+        </div>
+    </div>
+<!-- nombre, cedula, producto, kilos, precio, total -->
+    <div class="contenedor">
+      <div>
+<!--         <h2 class="nombreReciclador">nombre</h2>
+        <h3 class="cedula">cedula</h3>
+        <h4 class="producto">producto</h4>
+        <li class="kilos">kilos</li>
+        <li class="precio">precio</li>
+        <li class="total">total</li>
+      </div> -->
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="./js/xlsx.full.min.js"></script>
+    <script src="./js/cargarExcel.js"></script>
+  </body>
+</html>
